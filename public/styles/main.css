@@ -1,0 +1,59 @@
+:root{
+    --A: #453FF2;
+    --B: #426DFC;
+    --C:#4898E6;
+    --D: #42D1FC;
+    --E: #38F5EF;
+}
+
+body {
+    font-family: consolas;
+    display: grid;
+    grid-template-columns: 15em 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "head main"
+        "nav main"
+        "nav foot";
+       
+    margin: 0;
+    padding: 1.5rem;
+}
+a{
+    color: var(--B);
+    color: var(--D)
+}
+img { max-width: 100%; }
+html{
+    height: 100%;
+    background-image: linear-gradient(45deg, rgb(111, 71, 237) 0%, rgb(111, 71, 237) 21%,rgb(101, 92, 233) 21%, rgb(101, 92, 233) 30%,rgb(91, 112, 229) 30%, rgb(91, 112, 229) 35%,rgb(82, 133, 226) 35%, rgb(82, 133, 226) 51%,rgb(72, 154, 222) 51%, rgb(72, 154, 222) 72%,rgb(62, 174, 218) 72%, rgb(62, 174, 218) 81%,rgb(52, 195, 214) 81%, rgb(52, 195, 214) 100%);
+    
+}
+header {
+    grid-area: head;
+  }
+nav {
+    grid-area: nav;
+  }
+main {
+    grid-area: main;
+    padding: 0 1rem;
+  }
+footer { grid-area: foot; }
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+nav ul li {
+    padding-left: 0.5em;
+  }
+nav ul {
+    margin-top: 0;
+    padding-left: 1em;
+    list-style-type: ">";
+  } 
+h1,h2,h3,h4{
+    line-height: 1.1;
+}
